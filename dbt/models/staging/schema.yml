@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: staging
-    database: capstone-project-379718
-    schema: capstone_covid_data
+    database: github_archive_de
+    schema: covid_bqdata
 
     tables:
       - name: covid_table
