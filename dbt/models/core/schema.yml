@@ -30,5 +30,5 @@ models:
       - name: country
 
 
-  - name: prod_covid_ger
-    description: final model for german data
+  - name: prod_covid_afr
+    description: final model for zimbabwe data
