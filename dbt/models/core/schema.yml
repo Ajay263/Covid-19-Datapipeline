@@ -1,14 +1,12 @@
 version: 2
 
-
 sources:
-  - name: production  # Choose a name. This will be the 'source' referred to in the
-    database: github-archive-de  # BigQuery project reference
-    schema: covid_bqdata      # Choose a name for the table to be created in BigQuery
+  - name: production # Choose a name. This will be the 'source' referred to in the
+    database: github-archive-de # BigQuery project reference
+    schema: covid_bqdata # Choose a name for the table to be created in BigQuery
 
     tables:
       - name: covid_table
-
 
 models:
   - name: prod_covid_project
@@ -17,9 +15,9 @@ models:
       - name: year
       - name: month
       - name: date
-        tests: 
-            - not_null:
-                severity: warn
+        tests:
+          - not_null:
+              severity: warn
       - name: new_cases_per_mio
       - name: new_deaths_per_mio
       - name: people_fully_vaccinated_per_hundred
@@ -28,7 +26,6 @@ models:
       - name: hdi
       - name: continent
       - name: country
-
 
   - name: prod_covid_afr
     description: final model for zimbabwe data
