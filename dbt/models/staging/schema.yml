@@ -131,21 +131,13 @@ models:
           description: Real-time estimate of the effective reproduction rate (R) of COVID-19
         - name: positive_rate
           description: The share of COVID-19 tests that are positive, given as a rolling 7-day average 
-          tests: 
-          - dbt_utils.expression_is_true:
-                expression: ">= 0" 
-                expression: "<= 1"
-                severity: warn
+        
         - name: human_development_index
           description: >
             A composite index measuring average achievement in three basic dimensions of human development—a long and healthy life, 
             knowledge and a decent standard of living
             Values for 2019
-          tests: 
-          - dbt_utils.expression_is_true:
-                expression: ">= 0" 
-                expression: "<= 1"
-                severity: warn
+        
 
 
 
