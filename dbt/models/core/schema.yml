@@ -2,9 +2,9 @@ version: 2
 
 
 sources:
-  - name: production
-    database: github_archive_de
-    schema: covid_bqdata
+  - name: production  # Choose a name. This will be the 'source' referred to in the
+    database: github-archive-de  # BigQuery project reference
+    schema: covid_bqdata      # Choose a name for the table to be created in BigQuery
 
     tables:
       - name: covid_table
