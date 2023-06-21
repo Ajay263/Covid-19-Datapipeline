@@ -1,12 +1,12 @@
 version: 2
 
 sources:
-  - name: staging
-    database: github_archive_de
+  - name: staging   # Choose a name. This will be the 'source' referred to in the
+    database: github-archive-de   # BigQuery project reference
     schema: covid_bqdata
 
     tables:
-      - name: covid_table
+      - name: covid_table  # Choose a name for the table to be created in BigQuery
 
 
 
